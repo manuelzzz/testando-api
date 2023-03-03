@@ -1,0 +1,1 @@
+## Testando a criação de uma api ultilizando reactjs e nextjs
