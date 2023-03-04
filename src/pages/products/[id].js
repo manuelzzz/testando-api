@@ -10,6 +10,12 @@ export async function getStaticPaths() {
             }
         }],
         fallback: 'blocking',
+        // o fallback: true
+        // dá uma experiência melhor ao usuário pois é gerada uma página estática durante o build da página
+        // com o delay e o fallback: 'blocking'
+        // se a página for gerada UMA VEZ
+        // mesmo que fora dos parametros do getStaticPaths()
+        // a mesma, fica em cache e é redistribuida.
     }
 };
 
